@@ -1,0 +1,8 @@
+﻿/**
+ * RCN Brand Fonts
+ */
+
+:root {
+    --font-body: "Public Sans", arial, helvetica, sans-serif;
+    --font-heading: "Montserrat", arial, helvetica, sans-serif;
+}

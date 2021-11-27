@@ -1,0 +1,76 @@
+:root {
+    --width: 40rem;
+    --gap: 1.25rem;
+}
+
+* {
+    border-radius: 0;
+    scroll-margin-top: 2vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.5;
+    color: var(--grey-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--font-heading);
+}
+
+h1 {
+    font-size: 2em;
+    color: var(--blue);
+}
+
+h2 {
+    font-size: 1.5rem;
+    scroll-margin-top: 25vh;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p,
+li,
+blockquote {
+    margin: 1em 0;
+}
+
+hr {
+    border-bottom: none;
+    border-top: 2px solid var(--blue);
+}
+
+a {
+    color: var(--blue);
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+main {
+    box-sizing: content-box;
+    max-width: var(--width);
+    margin-inline: auto;
+    padding-inline: var(--gap);
+}
+
+section {
+    margin-block: var(--gap);
+}

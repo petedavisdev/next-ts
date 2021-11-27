@@ -1,0 +1,40 @@
+:root {
+    /*
+        Colours - primary
+    */
+    --white: #fff;
+    --blue: #004288; /* RCN logo blue - used for link text */
+    --blue-dark: #182540; /* Used for heading text */
+    --blue-light: #3368a0;
+    --blue-lighter: #cdd1e7;
+    --blue-lightest: #e5ecf3;
+    --red: #da0042; /* RCN logo red */
+    --red-dark: #6b1225;
+    --red-light: #f9d9d6;
+    /*
+        Colours - secondary
+    */
+    --aqua: #007bc1;
+    --aqua-dark: #016882;
+    --aqua-light: #cfeaf7;
+    --green: #039244;
+    --green-dark: #04622d;
+    --green-light: #dde8d9;
+    --grey: #726b7b;
+    --grey-dark: #39363c; /* Used for body text */
+    --grey-light: #e6e6e6;
+    --orange: #f9b104;
+    --orange-dark: #9b6e03;
+    --orange-light: #ffebcc;
+    --pink: #df1e7b;
+    --pink-dark: #951452;
+    --pink-light: #f8cce2;
+    --purple: #634696;
+    --purple-dark: #422f64;
+    --purple-light: #e0cbe4;
+    /*
+        Colours - seethrough
+    */
+    --blue-seethrough: #004288dd;
+    --blue-dark-seethrough: #182540dd;
+}

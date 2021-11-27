@@ -1,0 +1,18 @@
+button,
+.button {
+    padding: 1em 2em;
+    display: inline-block;
+    border: none;
+    color: var(--white);
+    background-color: var(--blue);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+button:focus,
+button:hover,
+.button:focus,
+.button:hover {
+    background-color: var(--blue-light);
+}

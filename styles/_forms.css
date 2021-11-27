@@ -1,0 +1,68 @@
+/* Form */
+form {
+    padding: 1px var(--gap);
+    background-color: var(--blue-lightest);
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Inputs */
+[type="text"],
+textarea {
+    display: block;
+    border: 3px solid var(--green);
+    resize: none;
+}
+
+textarea {
+    width: 100%;
+}
+
+::placeholder {
+    visibility: hidden;
+}
+
+:invalid {
+    border-color: var(--red);
+}
+
+:placeholder-shown {
+    border-color: var(--blue-lighter);
+}
+
+[type="text"]:focus,
+[type="text"]:hover,
+textarea:focus,
+textarea:hover {
+    border-color: var(--blue-light);
+    outline: none;
+}
+
+/* Radio group */
+[role="radiogroup"] {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: var(--gap) var(--gap) calc(4 * var(--gap));
+}
+
+[type="radio"] + label {
+    margin-inline-start: 0.5ch;
+    font-weight: normal;
+}
+
+[type="radio"]:focus + label,
+[type="radio"]:hover + label,
+[type="radio"]:checked + label {
+    text-decoration: underline;
+    text-decoration-color: var(--green);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+}
+
+[type="radio"]:hover + label,
+[type="radio"]:focus + label {
+    text-decoration-color: var(--blue-light);
+}
