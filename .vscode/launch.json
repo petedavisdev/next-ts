@@ -1,10 +1,19 @@
 {
   "configurations": [
     {
+      "name": "Attach to Edge",
+      "port": 9222,
+      "request": "attach",
+      "type": "pwa-msedge",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
       "name": "Launch Microsoft Edge and open the Edge DevTools",
       "request": "launch",
       "type": "vscode-edge-devtools.debug",
-      "url": "http://localhost:3000"
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "next dev"
     }
   ]
 }
