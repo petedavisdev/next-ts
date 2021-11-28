@@ -1,6 +1,6 @@
 type InputMessageProps = {
   id: string;
-  label: string;
+  children: JSX.Element | string;
   required: boolean;
   rows?: number;
   minLength?: number;
@@ -10,7 +10,7 @@ type InputMessageProps = {
 export function InputMessage(props: InputMessageProps) {
   return (
     <section>
-      <label htmlFor={props.id}>{props.label}</label>
+      <label htmlFor={props.id}>{props.children}</label>
 
       <textarea
         name={props.id}

@@ -1,19 +1,17 @@
 type InputOptionsProps = {
   id: string;
-  label: string;
+  children: JSX.Element | string;
   required: boolean;
-  options: [
-    {
-      value: string;
-      label?: string;
-    }
-  ];
+  options: {
+    value: string;
+    label?: string;
+  }[];
 };
 
 export function InputOptions(props: InputOptionsProps) {
   return (
     <section>
-      <label htmlFor={props.id}>{props.label}</label>
+      <label htmlFor={props.id}>{props.children}</label>
 
       <div>
         {props.options.map((option) => (

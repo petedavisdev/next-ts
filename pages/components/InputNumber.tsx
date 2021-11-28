@@ -1,6 +1,6 @@
 type InputNumberProps = {
   id: string;
-  label: string;
+  children: JSX.Element | string;
   required: boolean;
   pattern?: string;
   minLength?: number;
@@ -10,7 +10,9 @@ type InputNumberProps = {
 export function InputNumber(props: InputNumberProps) {
   return (
     <section>
-      <label htmlFor={props.id}>{props.label}</label>
+      <label htmlFor={props.id}>
+        {props.children} {!props.required && <small>(optional)</small>}
+      </label>
 
       <input
         type="text"

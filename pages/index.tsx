@@ -1,7 +1,11 @@
 import Head from "next/head";
 import { InputNumber } from "./components/InputNumber";
+import { InputMessage } from "./components/InputMessage";
+import { InputOptions } from "./components/InputOptions";
 
 export default function Home() {
+  const yesNo = [{ value: "Yes" }, { value: "No" }];
+
   return (
     <div>
       <Head>
@@ -12,7 +16,29 @@ export default function Home() {
 
       <h1>Hi</h1>
 
-      <InputNumber id="tel" label="Phone" required={false} />
+      <InputNumber id="tel" required={false}>
+        Phone
+      </InputNumber>
+
+      <InputMessage id="message" required={false}>
+        Message
+      </InputMessage>
+
+      <InputOptions id="js" required={true} options={yesNo}>
+        Do you like JS?
+      </InputOptions>
+
+      <InputOptions id="react" required={true} options={yesNo}>
+        Do you like React?
+      </InputOptions>
+
+      <InputOptions id="ts" required={true} options={yesNo}>
+        Do you like TypeScript?
+      </InputOptions>
+
+      <InputOptions id="vscode" required={true} options={yesNo}>
+        Do you like VS Code?
+      </InputOptions>
     </div>
   );
 }
