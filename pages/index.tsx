@@ -1,7 +1,7 @@
 import Head from "next/head";
-import { InputNumber } from "./components/InputNumber";
-import { InputMessage } from "./components/InputMessage";
-import { InputOptions } from "./components/InputOptions";
+import { InputNumber } from "../components/InputNumber";
+import { InputMessage } from "../components/InputMessage";
+import { InputOptions } from "../components/InputOptions";
 
 export default function Home() {
   const yesNo = [{ value: "Yes" }, { value: "No" }];
